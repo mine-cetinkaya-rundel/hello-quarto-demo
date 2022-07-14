@@ -22,16 +22,9 @@ The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io
 
 The plot below shows the relationship between flipper and bill lengths of these penguins.
 
-
-
 ```{r}
 #| label: plot-penguins
 #| warning: false
-#| fig-alt: |
-#|   Scatterplot of bill length vs. flipper length for three species of 
-#|   penguins. The relationship is positive and moderately strong. The 
-#|   three species are identified on the plot with points with different 
-#|   colors and shapes, revealing three clusters.
 
 ggplot(penguins, 
        aes(x = flipper_length_mm, y = bill_length_mm)) +
