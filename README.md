@@ -32,65 +32,59 @@ Repository for the demos in the "Hello, Quarto!" talk
       echo: false
   ```
 
-- Add image: ![](images/lter_penguins.png){fig-alt="Three species of penguins." fig-align="center" style="float: right;" width="300"}
+- Add alt text to figure in second code chunk -> save to render
 
-- Add alt text to figure, "Scatterplot of bill length vs. flipper length for three species of penguins. The relationship is positive and moderately strong. The three species are identified on the plot with points with different colors and shapes, revealing three clusters."
+  ``` r
+  #| fig-alt: |
+  #|   Scatterplot of bill length vs. flipper length for three species of 
+  #|   penguins. The relationship is positive and moderately strong. The three 
+  #|   species are identified on the plot with points with different colors 
+  #|   and shapes, revealing three clusters.
+  ```
 
-- Add two tables with layout-ncol: 2
+- Add image: 
+  
+  - using the visual editor, `images/lter_penguins.png`
+  - add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
+  - close dialogue -> save to render
+  - double click on image and change width to 400, tab to change height
+  - go to Attributes and under CSS classes add `float: right;` -> save to render
+  - switch over to source editor to show how this info is recorded
 
-- Add tables -- before data "This package has two datasets: "
+- Add tables:
 
-penguins
+  - Before "The plot below"
+  - Insert H2: "Datasets"
+  - Insert text: "This package has two datasets:"
+  - Insert tabsets:
+    - tab 1: penguins_raw
+      - Includes nesting observations, penguin size data, and isotope measurements from blood samples for adult Adélie, Chinstrap, and Gentoo penguins.
+    - tab 2: penguins
+      - Subset of `penguins_raw`, includes measurements for penguin species, island in Palmer Archipelago, size (flipper length, body mass, bill dimensions), and sex.
 
-Size measurements for adult foraging penguins near Palmer Station, Antarctica
+- Add H2 before plot "A first look at penguins"
+- Change to `format: revealjs` -> save to render
+- Remove execute / echo to show they're off by default -> save to render
+- Add a slide with two columns
+- Add code line highlighting to plotting chunk
 
-penguins_raw
+  ``` r	
+	#| code-line-numbers: "|3|5|7-12"
+  ```
 
-Penguin size, clutch, and blood isotope data for foraging adults near Palmer Station, Antarctica
+- Show hamburger menu outline and print to PDF
+- Add chalkboard
+  
+  ``` yaml
+  format: 
+    revealjs:
+      chalkboard: true
+  ```
 
-layout-ncol: 2
-also tabsets
+- Make into website by adding `_quarto.yml`
 
-### Demo 2 -
-
-### Demo 3 - Teach / teaching things:
-
-- Auto linking code to docs
-
-format: 
-  html:
-    code-link: true
-
-- 
-
-### Demo 4 - Reimagine / visual editor:
-
-- Add citation: 10.1371/journal.pone.0090081
-- insert image, add alt text
-  - CSS styles -- float:right;
-
-
-
-- change to format: revealjs
-- remove execute / echo to show they're off by default
-- add a slide with two columns
-
-- code line highlighting
-	#| code-line-numbers: |3|5|7-12
-
-- sidebar document outline, show print to pdf etc
-
-- chalkboard
-
-format: 
-  revealjs:
-    chalkboard: true
-
-- back to document, then make a website?
-
-  add _quarto.yml
-
-  project:
+  ``` yaml
+    project:
     type: website
   
   website:
@@ -104,7 +98,23 @@ format:
   format:
     html:
       theme: cosmo
-      css: styles.css
       toc: true
-  
-  editor: visual
+  ```
+
+### Demo 2 -
+
+### Demo 3 - Teach / teaching things:
+
+- Auto linking code to docs
+
+  ``` yaml
+  format: 
+    html:
+      code-link: true
+  ```
+
+- 
+
+### Demo 4 - Reimagine / visual editor:
+
+- Add citation: 10.1371/journal.pone.0090081
