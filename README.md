@@ -18,20 +18,19 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 ### Demo 1 - Share / flexibility in formats:
 
-- Open hello.Rmd with source editor
-- Change to visual editor
-- Knit
-- Close file
-- Change file type to .qmd
-- Open and render
-- Change output -> format: html and render
-- Change to format: pdf, render, then change back to format: html
-- Click on render on save
-- Add chunk options, with yaml completion, re-render
-- Turn off echo from top yaml
+- Open hello.Rmd with source editor -> knit
+- Change to visual editor -> knit
+- Close file -> change file type to .qmd -> open (make sure visual editor) and render
+- Change `output: html_document` to `format: html` -> render
+- Click on Render on save
+- Change to `format: pdf` -> save to render -> then change back to `format: html`
+- Add chunk option `echo: false` to the first chunk using tab completion -> save to render
+- Delete `echo: false` from first chunk -> turn off echo from document YAML -- type `execute:`, return, `e`, tab completion to choose `echo` and `false`.
 
-execute:
-    echo: false
+  ``` yaml
+  execute:
+      echo: false
+  ```
 
 - Add image: ![](images/lter_penguins.png){fig-alt="Three species of penguins." fig-align="center" style="float: right;" width="300"}
 
