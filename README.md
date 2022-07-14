@@ -5,10 +5,13 @@ Repository for the demos in the "Hello, Quarto!" talk
 ## Software
 
 - RStudio: 
-  - Version: Preview -- RStudio 2022.07.0+548 "Spotted Wakerobin" Release (34ea3031089fa4e38738a9256d6fa6d70629c822, 2022-07-06) for macOS Mozilla/5.0 (Macintosh; Intel Mac OS X 12_4_0) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.10 Chrome/69.0.3497.128 Safari/537.36)
+  - Version: Current release -- RStudio 2022.07.0+548 "Spotted Wakerobin" Release (34ea3031089fa4e38738a9256d6fa6d70629c822, 2022-07-06) for macOS Mozilla/5.0 (Macintosh; Intel Mac OS X 12_4_0) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.10 Chrome/69.0.3497.128 Safari/537.36
   - Theme: rsthemes::a11y-light
+
 - R 4.2.1
+
 - MousePose - Mouse Clicks on
+
 - Desktop - Background single color Quarto blue (#75aadb)
 
 ## Steps
@@ -30,9 +33,11 @@ Repository for the demos in the "Hello, Quarto!" talk
 execute:
     echo: false
 
-- Add two tables with layout-ncol: 2
+- Add image: ![](images/lter_penguins.png){fig-alt="Three species of penguins." fig-align="center" style="float: right;" width="300"}
 
 - Add alt text to figure, "Scatterplot of bill length vs. flipper length for three species of penguins. The relationship is positive and moderately strong. The three species are identified on the plot with points with different colors and shapes, revealing three clusters."
+
+- Add two tables with layout-ncol: 2
 
 - Add tables -- before data "This package has two datasets: "
 
