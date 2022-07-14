@@ -5,7 +5,7 @@ output: html_document
 
 ```{r}
 #| label: load-packages
-#| include: false
+#| message: false
 
 library(tidyverse)
 library(palmerpenguins)
