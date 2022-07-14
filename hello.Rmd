@@ -1,7 +1,6 @@
 ---
 title: "Hello, Quarto!"
 output: html_document
-editor: visual
 ---
 
 ```{r}
@@ -19,11 +18,11 @@ To learn more about Quarto see <https://quarto.org>.
 
 ## Meet the penguins
 
-![](images/lter_penguins.png){fig-alt="Three species of penguins." fig-align="center" style="float: right;" width="400"}
-
 The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
 
 The plot below shows the relationship between flipper and bill lengths of these penguins.
+
+
 
 ```{r}
 #| label: plot-penguins
