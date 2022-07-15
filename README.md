@@ -57,16 +57,8 @@ Repository for the demos in the "Hello, Quarto!" talk
     #|   revealing three clusters.
     ```
 
--   Add image: **MOVE TO VISUAL EDITOR**
 
-    -   using the visual editor, `images/lter_penguins.png`
-    -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
-    -   close dialogue -\> save to render
-    -   double click on image and change width to 400, tab to change height
-    -   go to Attributes and under CSS classes add `float: right;` -\> save to render
-    -   switch over to source editor to show how this info is recorded
-
-#### Part 3 - ???
+#### Part 3 - ??? **Julie note: time-wise I wonder if this could move to Demo 3 Teach"
 
 -   Add tables: -
 
@@ -86,8 +78,6 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   Change to `format: revealjs` -\> save to render
 
 -   Remove execute / echo to show they're off by default -\> save to render
-
--   Add a slide with two columns - **REMOVE OR MOVE TO VISUAL EDITOR**
 
 -   Add code line highlighting to plotting chunk
 
@@ -147,15 +137,24 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Orient to JupyterLab
 -   Open Mine's example site, quarto preview
--   Open website in separate window (narrow windows), demo live updating
--   Create new `.ipynb` (code: palmerpenguins in python?)
--   Execute notebook
+-   Open website in separate window (narrow windows) 
+-   New `.ipynb` Copy pre-made one: New Terminal > `cp hello_in_python.ipynb hello-quarto-demo` (can pause recording)
+-   Talk through and execute notebook chunks
 -   Add `.ipynb` to `_quarto.yml`
--   Confirm new page is added to website
--   Add quarto commenting - no auto-update! Because -
--   Freeze by default with Jupyter Notebooks
+-   View website - new page is added to website
+-   Add quarto commenting - no auto-update! Because  Freeze by default with Jupyter Notebooks -- this actually did auto-update hmmmm
+-  Add fig captions
+
+```
+#| fig-cap: "Body Mass by Island for each Species."
+```
+- Add margin
+
+```
+#| column: margin   
+```
+
 -   Turn this into slides (??)
--   Add a table in the margin
 -   `quarto convert` to .qmd
 -   `quarto publish` (??)
 
@@ -173,4 +172,18 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 ### Demo 4 - Reimagine / visual editor:
 
--   Add citation: 10.1371/journal.pone.0090081
+-   open project in RStudio
+-   quarto preview, no prob with the .ipynb file
+-   Edit Mine's hello.qmd 
+-   Add image: 
+    -   using the visual editor, `images/lter_penguins.png`
+    -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
+    -   close dialogue -\> save to render
+    -   double click on image and change width to 400, tab to change height
+    -   go to Attributes and under CSS classes add `float: right;` -\> save to render
+    -   switch over to source editor to show how this info is recorded
+-   Tables
+- Two columns - make the image and table in 2 columns
+-   Call-outs
+-   Citations: 10.1371/journal.pone.0090081
+- let's create a section in the quarto_yml
