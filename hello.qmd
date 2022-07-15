@@ -1,0 +1,89 @@
+---
+title: "Hello, Quarto!"
+format: html
+---
+
+## Meet Quarto!
+
+Quarto enables you to weave together content and executable code into a finished document.
+To learn more about Quarto see <https://quarto.org>.
+
+## Meet the penguins
+
+```{r}
+#| label: load-packages
+#| message: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+![](images/lter_penguins.png){style="float: right;" fig-alt="Three species of penguins: Chinstrap, Gentoo, Adelie." width="400"}
+
+The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `r nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+
+## Data sets
+
+This package has two datasets.
+
+::: panel-tabset
+## `penguins_raw`
+
+Includes nesting observations, penguin size data, and isotope measurements from blood samples for adult Adélie, Chinstrap, and Gentoo penguins.
+
+```{r}
+glimpse(penguins_raw)
+```
+
+## `penguins`
+
+Subset of penguins_raw, includes measurements for penguin species, island in Palmer Archipelago, size (flipper length, body mass, bill dimensions), and sex.
+
+```{r}
+glimpse(penguins)
+```
+:::
+
+## A first look at penguins
+
+The plot below shows the relationship between flipper and bill lengths of these penguins.
+
+```{r}
+#| label: plot-penguins
+#| warning: false
+#| echo: true
+#| output-location: slide
+#| code-line-numbers: "|1-2|3|4|5-12|13"
+#| fig-alt: |
+#|   Scatterplot of bill length vs. flipper length for three 
+#|   species of penguins. The relationship is positive and 
+#|   moderately strong. The three species are identified on 
+#|   the plot with points with different colors and shapes, 
+#|   revealing three clusters.
+
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  scale_color_manual(values = c("darkorange", "purple", "cyan4")) +
+  labs(
+    title = "Flipper and bill length",
+    subtitle = "Dimensions for penguins at Palmer Station LTER",
+    x = "Flipper length (mm)", 
+    y = "Bill length (mm)",
+    color = "Penguin species", 
+    shape = "Penguin species"
+  ) +
+  theme_minimal()
+```
+
+## A slide with two columns
+
+::: columns
+::: {.column width="50%"}
+Column 1
+:::
+
+::: {.column width="50%"}
+Column 2
+:::
+:::

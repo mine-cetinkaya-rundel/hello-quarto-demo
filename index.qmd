@@ -1,0 +1,7 @@
+---
+title: "Welcome"
+format: html
+editor: visual
+---
+
+Welcome to the demo site for the "Hello, Quarto!" talk at rstudio::conf(2022).

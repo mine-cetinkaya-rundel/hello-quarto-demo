@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to the demo site for the “Hello, Quarto!” talk at rstudio::conf(2022)."
+  },
+  {
+    "objectID": "hello.html",
+    "href": "hello.html",
+    "title": "Hello, Quarto!",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "hello.html#meet-the-penguins",
+    "href": "hello.html#meet-the-penguins",
+    "title": "Hello, Quarto!",
+    "section": "Meet the penguins",
+    "text": "Meet the penguins\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
+  },
+  {
+    "objectID": "hello.html#data-sets",
+    "href": "hello.html#data-sets",
+    "title": "Hello, Quarto!",
+    "section": "Data sets",
+    "text": "Data sets\nThis package has two datasets.\n\npenguins_rawpenguins\n\n\nIncludes nesting observations, penguin size data, and isotope measurements from blood samples for adult Adélie, Chinstrap, and Gentoo penguins.\n\nglimpse(penguins_raw)\n\nRows: 344\nColumns: 17\n$ studyName             <chr> \"PAL0708\", \"PAL0708\", \"PAL0708\", \"PAL0708\", \"PAL…\n$ `Sample Number`       <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 1…\n$ Species               <chr> \"Adelie Penguin (Pygoscelis adeliae)\", \"Adelie P…\n$ Region                <chr> \"Anvers\", \"Anvers\", \"Anvers\", \"Anvers\", \"Anvers\"…\n$ Island                <chr> \"Torgersen\", \"Torgersen\", \"Torgersen\", \"Torgerse…\n$ Stage                 <chr> \"Adult, 1 Egg Stage\", \"Adult, 1 Egg Stage\", \"Adu…\n$ `Individual ID`       <chr> \"N1A1\", \"N1A2\", \"N2A1\", \"N2A2\", \"N3A1\", \"N3A2\", …\n$ `Clutch Completion`   <chr> \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"Yes\", \"No\", …\n$ `Date Egg`            <date> 2007-11-11, 2007-11-11, 2007-11-16, 2007-11-16,…\n$ `Culmen Length (mm)`  <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34…\n$ `Culmen Depth (mm)`   <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18…\n$ `Flipper Length (mm)` <dbl> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190,…\n$ `Body Mass (g)`       <dbl> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 34…\n$ Sex                   <chr> \"MALE\", \"FEMALE\", \"FEMALE\", NA, \"FEMALE\", \"MALE\"…\n$ `Delta 15 N (o/oo)`   <dbl> NA, 8.94956, 8.36821, NA, 8.76651, 8.66496, 9.18…\n$ `Delta 13 C (o/oo)`   <dbl> NA, -24.69454, -25.33302, NA, -25.32426, -25.298…\n$ Comments              <chr> \"Not enough blood for isotopes.\", NA, NA, \"Adult…\n\n\n\n\nSubset of penguins_raw, includes measurements for penguin species, island in Palmer Archipelago, size (flipper length, body mass, bill dimensions), and sex.\n\nglimpse(penguins)\n\nRows: 344\nColumns: 8\n$ species           <fct> Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…\n$ island            <fct> Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…\n$ bill_length_mm    <dbl> 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …\n$ bill_depth_mm     <dbl> 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …\n$ flipper_length_mm <int> 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…\n$ body_mass_g       <int> 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …\n$ sex               <fct> male, female, female, NA, female, male, female, male…\n$ year              <int> 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…"
+  },
+  {
+    "objectID": "hello.html#a-first-look-at-penguins",
+    "href": "hello.html#a-first-look-at-penguins",
+    "title": "Hello, Quarto!",
+    "section": "A first look at penguins",
+    "text": "A first look at penguins\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", \n    y = \"Bill length (mm)\",\n    color = \"Penguin species\", \n    shape = \"Penguin species\"\n  ) +\n  theme_minimal()"
+  },
+  {
+    "objectID": "hello.html#a-slide-with-two-columns",
+    "href": "hello.html#a-slide-with-two-columns",
+    "title": "Hello, Quarto!",
+    "section": "A slide with two columns",
+    "text": "A slide with two columns\n\n\nColumn 1\n\nColumn 2"
+  }
+]
