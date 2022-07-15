@@ -143,7 +143,21 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Make one change in hello.qmd, watch it update the site
 
-### Demo 2 - Collaborate / ???:
+### Demo 2 - Collaborate:
+
+-   Orient to JupyterLab
+-   Open Mine's example site, quarto preview
+-   Open website in separate window (narrow windows), demo live updating
+-   Create new `.ipynb` (code: palmerpenguins in python?)
+-   Execute notebook
+-   Add `.ipynb` to `_quarto.yml`
+-   Confirm new page is added to website
+-   Add quarto commenting - no auto-update! Because -
+-   Freeze by default with Jupyter Notebooks
+-   Turn this into slides (??)
+-   Add a table in the margin
+-   `quarto convert` to .qmd
+-   `quarto publish` (??)
 
 ### Demo 3 - Teach / teaching things:
 
