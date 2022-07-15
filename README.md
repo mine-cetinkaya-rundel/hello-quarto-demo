@@ -50,10 +50,11 @@ Repository for the demos in the "Hello, Quarto!" talk
 
     ``` r
     #| fig-alt: |
-    #|   Scatterplot of bill length vs. flipper length for three species of 
-    #|   penguins. The relationship is positive and moderately strong. The three 
-    #|   species are identified on the plot with points with different colors 
-    #|   and shapes, revealing three clusters.
+    #|   Scatterplot of bill length vs. flipper length for three 
+    #|   species of penguins. The relationship is positive and 
+    #|   moderately strong. The three species are identified on 
+    #|   the plot with points with different colors and shapes, 
+    #|   revealing three clusters.
     ```
 
 -   Add image:
@@ -106,27 +107,43 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 #### Part 5
 
--   Make into website by adding `_quarto.yml`
+-   Change to `format: html`
+
+-   Add `index.qmd` with File \> New Quarto Document
+
+    ``` markdown
+    ---
+    title: "Welcome"
+    format: html
+    editor: visual
+    ---
+
+    Welcome to the demo site for the "Hello, Quarto!" talk at rstudio::conf(2022)!
+    ```
+
+-   Add `_quarto.yml`
 
     ``` yaml
-      project:
+    project:
       type: website
 
     website:
-      title: "Hello, Quarto!"
+      title: "Quarto"
       navbar:
         left:
-          - href: hello.qmd
-            text: Home
-          - about.qmd
-
-    format:
-      html:
-        theme: cosmo
-        toc: true
+          - index.qmd
+          - hello.qmd
     ```
 
-### Demo 2 - Collaborate /  ???:
+-   Relaunch projects with File \> Recent projects \> choose most recent
+
+-   Show new Build tab
+
+-   Preview site, show `_site` folder
+
+-   Make one change in hello.qmd, watch it update the site
+
+### Demo 2 - Collaborate / ???:
 
 ### Demo 3 - Teach / teaching things:
 
