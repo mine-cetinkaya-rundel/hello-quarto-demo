@@ -57,7 +57,7 @@ Repository for the demos in the "Hello, Quarto!" talk
     #|   revealing three clusters.
     ```
 
--   Add image:
+-   Add image: **MOVE TO VISUAL EDITOR**
 
     -   using the visual editor, `images/lter_penguins.png`
     -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
@@ -66,9 +66,9 @@ Repository for the demos in the "Hello, Quarto!" talk
     -   go to Attributes and under CSS classes add `float: right;` -\> save to render
     -   switch over to source editor to show how this info is recorded
 
-#### Part 3
+#### Part 3 - ???
 
--   Add tables:
+-   Add tables: -
 
     -   Before "The plot below"
     -   Insert H2: "Datasets"
@@ -87,7 +87,7 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Remove execute / echo to show they're off by default -\> save to render
 
--   Add a slide with two columns
+-   Add a slide with two columns - **REMOVE OR MOVE TO VISUAL EDITOR**
 
 -   Add code line highlighting to plotting chunk
 
