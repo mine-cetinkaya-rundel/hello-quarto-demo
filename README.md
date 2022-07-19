@@ -174,7 +174,10 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   open project in RStudio
 -   quarto preview, no prob with the .ipynb file
--   Edit Mine's hello.qmd 
+-   Edit Mine's index.qmd 
+    - make sure the "render on save" button is on
+    - it's really nice for writing a lot of prose
+    - it's also really great for pasting text from let's say a google doc! Formatting stays.
 -   Add image: 
     -   using the visual editor, `images/lter_penguins.png`
     -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
