@@ -134,11 +134,12 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   Make one change in hello.qmd, watch it update the site
 
 ### Demo 2 - Collaborate:
+Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url
 
 -   Orient to JupyterLab
 -   Open Mine's example site, quarto preview
 -   Open website in separate window (narrow windows) 
--   New `.ipynb` Copy pre-made one: New Terminal > `cp hello_in_python.ipynb hello-quarto-demo` (can pause recording)
+-   PAUSE recording - copy pre-made .ipynb (New Terminal > `cp hello_in_python.ipynb hello-quarto-demo`, delete code chunks. Also open _quarto.yml)
 -   Talk through and execute notebook chunks
 -   Add `.ipynb` to `_quarto.yml`
 -   View website - new page is added to website
@@ -147,6 +148,7 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 ```
 #| fig-cap: "Body Mass by Island for each Species."
+TODO alt-text
 ```
 - Add margin
 
@@ -183,10 +185,12 @@ Repository for the demos in the "Hello, Quarto!" talk
     -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
     -   close dialogue -\> save to render
     -   double click on image and change width to 400, tab to change height
-    -   go to Attributes and under CSS classes add `float: right;` -\> save to render
+    -   go to Attributes and under CSS styles add `float: right;` -\> save to render
     -   switch over to source editor to show how this info is recorded
 -   Tables
 - Two columns - make the image and table in 2 columns
 -   Call-outs
 -   Citations: 10.1371/journal.pone.0090081
 - let's create a section in the quarto_yml
+
+Copy formatting from wikipedia: https://en.wikipedia.org/wiki/Quarto
