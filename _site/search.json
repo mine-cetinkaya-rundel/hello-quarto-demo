@@ -18,7 +18,7 @@
     "href": "hello.html#meet-the-penguins",
     "title": "Hello, Quarto!",
     "section": "Meet the penguins",
-    "text": "Meet the penguins\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
+    "text": "Meet the penguins\n\nlibrary(tidyverse)\n\nWarning: package 'tibble' was built under R version 4.1.2\n\n\nWarning: package 'tidyr' was built under R version 4.1.2\n\n\nWarning: package 'readr' was built under R version 4.1.2\n\n\nWarning: package 'dplyr' was built under R version 4.1.2\n\nlibrary(palmerpenguins)\n\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica."
   },
   {
     "objectID": "hello.html#data-sets",
