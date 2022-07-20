@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to the demo site for the “Hello, Quarto!” talk at rstudio::conf(2022)."
+  },
+  {
     "objectID": "hello.html",
     "href": "hello.html",
     "title": "Hello, Quarto!",
@@ -33,12 +40,5 @@
     "title": "Hello, Quarto!",
     "section": "A slide with two columns",
     "text": "A slide with two columns\n\n\nColumn 1\n\nColumn 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to the demo site for the “Hello, Quarto!” talk at rstudio::conf(2022)."
   }
 ]
