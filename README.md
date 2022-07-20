@@ -154,9 +154,9 @@ Repository for the demos in the "Hello, Quarto!" talk
 #| column: margin   
 ```
 
--   Turn this into slides (??)
 -   `quarto convert` to .qmd
--   `quarto publish` (??)
+-   `quarto publish`
+-   ~Turn this into slides~
 
 ### Demo 3 - Teach / teaching things:
 
