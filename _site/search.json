@@ -40,5 +40,19 @@
     "title": "Hello, Quarto!",
     "section": "A slide with two columns",
     "text": "A slide with two columns\n\n\nColumn 1\n\nColumn 2"
+  },
+  {
+    "objectID": "hello_in_python.html",
+    "href": "hello_in_python.html",
+    "title": "Hello Quarto in Python",
+    "section": "",
+    "text": "Install and explore the palmerpenguins python package by mcnakhaee. The Palmer penguins dataset by Allison Horst, Alison Hill, and Kristen Gorman was first made publicly available as an R package. The goal of the Palmer Penguins dataset is to replace the highly overused Iris dataset for data exploration & visualization. Using this python package you can easily load the Palmer penguins into your python environment.\n\nimport pandas as pd\nimport seaborn as sns \nfrom palmerpenguins import load_penguins\nsns.set_style('whitegrid')\npenguins = load_penguins()\npenguins.head()\n\n\n\n\n\n  \n    \n      \n      species\n      island\n      bill_length_mm\n      bill_depth_mm\n      flipper_length_mm\n      body_mass_g\n      sex\n      year\n    \n  \n  \n    \n      0\n      Adelie\n      Torgersen\n      39.1\n      18.7\n      181.0\n      3750.0\n      male\n      2007\n    \n    \n      1\n      Adelie\n      Torgersen\n      39.5\n      17.4\n      186.0\n      3800.0\n      female\n      2007\n    \n    \n      2\n      Adelie\n      Torgersen\n      40.3\n      18.0\n      195.0\n      3250.0\n      female\n      2007\n    \n    \n      3\n      Adelie\n      Torgersen\n      NaN\n      NaN\n      NaN\n      NaN\n      NaN\n      2007\n    \n    \n      4\n      Adelie\n      Torgersen\n      36.7\n      19.3\n      193.0\n      3450.0\n      female\n      2007"
+  },
+  {
+    "objectID": "hello_in_python.html#penguins-flipper-and-bill-length-plot",
+    "href": "hello_in_python.html#penguins-flipper-and-bill-length-plot",
+    "title": "Hello Quarto in Python",
+    "section": "Penguins flipper and bill length plot",
+    "text": "Penguins flipper and bill length plot\nLet’s plot flipper and bill length and group by species.\n\ng = sns.lmplot(x=\"flipper_length_mm\",\n               y=\"bill_length_mm\",\n               hue=\"species\",\n               height=7,\n               data=penguins,\n               palette=['#FF8C00','#159090','#A034F0'])\ng.set_xlabels('Flipper Length')\ng.set_ylabels('Body Mass')\n\n\n<seaborn.axisgrid.FacetGrid at 0x7fb59e4f79a0>\nFlipper and bill length for penguins"
   }
 ]
