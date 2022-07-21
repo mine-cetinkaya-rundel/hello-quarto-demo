@@ -139,7 +139,7 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 -   Orient to JupyterLab
 -   Open Mine's example site, quarto preview
 -   Open website in separate window (narrow windows) 
--   PAUSE recording - copy pre-made .ipynb (New Terminal > `cp hello_in_python.ipynb hello-quarto-demo`, delete code chunks. Also open _quarto.yml)
+-   PAUSE recording - copy pre-made .ipynb (New Terminal > `cp hello_in_python.ipynb hello-quarto-demo`, delete code comments. Also open _quarto.yml)
 -   Talk through and execute notebook chunks
 -   Add `.ipynb` to `_quarto.yml`
 -   View website - new page is added to website
@@ -147,8 +147,7 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 -  Add fig captions
 
 ```
-#| fig-cap: "Body Mass by Island for each Species."
-TODO alt-text
+#| fig-cap: "Flipper and bill length for penguins"
 ```
 - Add margin
 
@@ -157,7 +156,6 @@ TODO alt-text
 ```
 
 -   `quarto convert` to .qmd
--   `quarto publish`
 -   ~Turn this into slides~
 
 ### Demo 3 - Teach / teaching things:
@@ -192,6 +190,7 @@ Goal: to show you the visual editor, and also some additional features of Quarto
     -   close dialogue -\> save to render
     -   double click on image and change width to 400, tab to change height
     -   switch over to source editor to show how this info is recorded
+- TWO MORE THINGS about Quarto that aren't Visual Editor Specific but I'd like to show you:
 - Add extension: 
 ```
 filters:
@@ -200,5 +199,9 @@ lightbox: auto
 ```
 -   Call-outs
 -   Citations: 10.1371/journal.pone.0090081
+
+- From terminal: `quarto publish quarto-pub`
+
+
 
 Copy formatting from wikipedia: https://en.wikipedia.org/wiki/Quarto
