@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to the demo site for the “Hello, Quarto!” talk at rstudio::conf(2022).\nThis is a really nice way to write about Quarto. Here are some things about Quarto, from Wikipedia:"
+  },
+  {
+    "objectID": "index.html#quarto",
+    "href": "index.html#quarto",
+    "title": "Welcome",
+    "section": "Quarto",
+    "text": "Quarto\nA quarto (from Latin quārtō, ablative form of quārtus, fourth) is a book or pamphlet made up of one or more full sheets of paper on which 8 pages of text were printed, which were then folded two times to produce four leaves. Each leaf of a quarto book thus represents one fourth the size of the original sheet. Each group of 4 leaves (called a “gathering” or “quire”) could be sewn through the central fold to attach it to the other gatherings to form a book. Sometimes, additional leaves would be inserted within another group to form, for example, gatherings of 8 leaves, which similarly would be sewn through the central fold. Generally, quartos have more squarish proportions than folios or octavos.\nThe actual size of a quarto book depends on the size of the full sheet of paper on which it was printed. A demy quarto (abbreviated demy 4to) is a chiefly British term referring to a book size of about 11.25 by 8.75 inches (286 by 222 mm), a medium quarto 9 by 11.5 inches (230 by 290 mm), a royal quarto 10 by 12.5 inches (250 by 320 mm), and a small quarto equalled a square octavo, all untrimmed.\n\n\n\nThe quarto meteor crosses the sky\n\n\nIt’s time for a citation (Gorman, Williams, and Fraser 2014)\n\n\n\n\n\n\nThis is important!\n\n\n\nThis demo is coming to a close"
+  },
+  {
     "objectID": "hello.html",
     "href": "hello.html",
     "title": "Hello, Quarto!",
@@ -33,12 +47,5 @@
     "title": "Hello, Quarto!",
     "section": "A slide with two columns",
     "text": "A slide with two columns\n\n\nColumn 1\n\nColumn 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "Welcome to the demo site for the “Hello, Quarto!” talk at rstudio::conf(2022)."
   }
 ]

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/mine-cetinkaya-rundel/hello-quarto-demo/hello.html</loc>
-    <lastmod>2022-07-21T12:35:50.343Z</lastmod>
+    <loc>https://mine-cetinkaya-rundel.github.io/hello-quarto-demo/index.html</loc>
+    <lastmod>2022-07-21T20:04:26.381Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/mine-cetinkaya-rundel/hello-quarto-demo/index.html</loc>
-    <lastmod>2022-07-21T12:35:51.399Z</lastmod>
+    <loc>https://mine-cetinkaya-rundel.github.io/hello-quarto-demo/hello.html</loc>
+    <lastmod>2022-07-21T20:04:27.118Z</lastmod>
   </url>
 </urlset>
