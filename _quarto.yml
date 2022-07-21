@@ -10,3 +10,4 @@ website:
     left:
       - index.qmd
       - hello.qmd
+      - hello_in_python.ipynb
