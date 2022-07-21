@@ -173,24 +173,32 @@ TODO alt-text
 -   
 
 ### Demo 4 - Reimagine / visual editor:
+Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml
+
+Goal: to show you the visual editor, and also some additional features of Quarto that are integrated in the Visual Editor
 
 -   open project in RStudio
--   quarto preview, no prob with the .ipynb file
--   Edit Mine's index.qmd 
-    - make sure the "render on save" button is on
+-   ~quarto preview, no prob with the .ipynb file~
+-   Open Mine's index.qmd 
+-   make sure the "render on save" button is on: render
+- Now let's edit: 
     - it's really nice for writing a lot of prose
+    - but also really friendly for beginners
     - it's also really great for pasting text from let's say a google doc! Formatting stays.
 -   Add image: 
-    -   using the visual editor, `images/lter_penguins.png`
-    -   add alt text: Three species of penguins: Chinstrap, Gentoo, and Adelie.
+    -   using the visual editor, `command-/`: `images/horst_quarto_meteor.png`
+    -   add caption: The quarto meteor crosses the sky
+    -   add alt text: An illustrated meteor with the quarto logo.
     -   close dialogue -\> save to render
     -   double click on image and change width to 400, tab to change height
-    -   go to Attributes and under CSS styles add `float: right;` -\> save to render
     -   switch over to source editor to show how this info is recorded
--   Tables
-- Two columns - make the image and table in 2 columns
+- Add extension: 
+```
+filters:
+   - lightbox
+lightbox: auto   
+```
 -   Call-outs
 -   Citations: 10.1371/journal.pone.0090081
-- let's create a section in the quarto_yml
 
 Copy formatting from wikipedia: https://en.wikipedia.org/wiki/Quarto
