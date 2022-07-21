@@ -134,7 +134,7 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   Make one change in hello.qmd, watch it update the site
 
 ### Demo 2 - Collaborate:
-Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url
+Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url. Mousepose.
 
 -   Orient to JupyterLab
 -   Open Mine's example site, quarto preview
@@ -173,7 +173,7 @@ TODO alt-text
 -   
 
 ### Demo 4 - Reimagine / visual editor:
-Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml
+Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml. Mousepose.
 
 Goal: to show you the visual editor, and also some additional features of Quarto that are integrated in the Visual Editor
 
