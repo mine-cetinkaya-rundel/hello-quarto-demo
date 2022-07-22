@@ -1,0 +1,34 @@
+---
+title: Hello Quarto in Python
+jupyter: python3
+---
+
+## Meet the Penguins
+Install and explore the [palmerpenguins](https://github.com/mcnakhaee/palmerpenguins) python package by mcnakhaee. The [Palmer penguins dataset](https://allisonhorst.github.io/palmerpenguins/) by Allison Horst, Alison Hill, and Kristen Gorman was first made publicly available as an [R package](https://cran.r-project.org/web/packages/palmerpenguins/index.html). The goal of the Palmer Penguins dataset is to replace the highly overused Iris dataset for data exploration & visualization. Using this python package you can easily load the Palmer penguins into your python environment.
+
+```{python}
+import pandas as pd
+import seaborn as sns 
+from palmerpenguins import load_penguins
+sns.set_style('whitegrid')
+penguins = load_penguins()
+penguins.head()
+```
+
+## Penguins flipper and bill length plot
+Let's plot flipper and bill length and group by species. 
+
+```{python}
+#| fig-cap: Flipper and bill length for penguins
+#| column: margin
+g = sns.lmplot(x="flipper_length_mm",
+               y="bill_length_mm",
+               hue="species",
+               height=7,
+               data=penguins,
+               palette=['#FF8C00','#159090','#A034F0'])
+g.set_xlabels('Flipper Length')
+g.set_ylabels('Body Mass')
+```
+
+
