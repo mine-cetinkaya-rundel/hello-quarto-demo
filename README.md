@@ -168,7 +168,7 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
         code-link: true
     ```
 
--   
+- From terminal: `quarto publish quarto-pub`
 
 ### Demo 4 - Reimagine / visual editor:
 Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml. Mousepose.
@@ -199,8 +199,6 @@ lightbox: auto
 ```
 -   Call-outs
 -   Citations: 10.1371/journal.pone.0090081
-
-- From terminal: `quarto publish quarto-pub`
 
 
 
