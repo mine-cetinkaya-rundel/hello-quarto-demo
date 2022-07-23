@@ -15,13 +15,15 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Desktop - Background single color Quarto blue (#75aadb)
 
--   Quarto - 1.0.24
+-   Quarto - 1.0.36
 
 ## Steps
 
 ### Demo 1 - Share / flexibility in formats:
 
 #### Part 1
+
+**TO DO: Mention freeze!!!**
 
 -   Open hello.Rmd with source editor -\> knit
 
