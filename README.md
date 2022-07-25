@@ -178,30 +178,39 @@ Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml. Mo
 Goal: to show you the visual editor, and also some additional features of Quarto that are integrated in the Visual Editor
 
 -   open project in RStudio
--   ~quarto preview, no prob with the .ipynb file~
 -   Open Mine's index.qmd 
--   make sure the "render on save" button is on: render
+- switch to visual editor
 - Now let's edit: 
-    - it's really nice for writing a lot of prose
-    - but also really friendly for beginners
-    - it's also really great for pasting text from let's say a google doc! Formatting stays.
+    - Type "Quarto unifies and extends the RMarkdown ecosystem." 
+- pasting text from a google doc! Formatting stays: 
+
+```
+
+[**Quarto**](https://quarto.org) is a new, open-source, scientific and technical publishing system that makes the process of creating and collaborating dramatically better. It\'s a **really powerful** tool for research teams, since we can use the same workflow for reproducible data analyses and for and for new ways of contributing to science. See the [Quarto Gallery](https://quarto.org/docs/gallery/) for examples and learn more through [Quarto at rstudio::conf(2022)](https://quarto.org/docs/blog/posts/2022-06-21-rstudio-conf-2022-quarto/).
+
+
+Next we'll explore Quarto with the tidyverse and data from the[ palmerpenguins](https://allisonhorst.github.io/palmerpenguins) R package.
+```
 -   Add image: 
-    -   using the visual editor, `command-/`: `images/horst_quarto_meteor.png`
-    -   add caption: The quarto meteor crosses the sky
-    -   add alt text: An illustrated meteor with the quarto logo.
-    -   close dialogue -\> save to render
+    -   using the visual editor, Insert menu: `images/horst_quarto_meteor.png`
+    -   add caption: The Quarto meteor crosses the night sky. We liked the idea of Quarto in the night sky and worked with Allison Horst to bring these ideas to life. Allison made several other images with Quarto in the night sky, including illustrations depicting teach, collaborate, share, and reimagine. 
+
+    -   add alt text: An illustrated meteor with the quarto logo crosses the night sky
+    -   close dialogue -\> save to render \> 
     -   double click on image and change width to 400, tab to change height
     -   switch over to source editor to show how this info is recorded
-- TWO MORE THINGS about Quarto that aren't Visual Editor Specific but I'd like to show you:
+-   Add citations: 
+    - 1. Command - / to add a doi: 10.1371/journal.pone.0090081
+    - 2. \@ to search my Zotero library
+-   Also: Call-outs
+    - Final tip: To learn more
+     - Check out our [slides](https://mine.quarto.pub/hello-quarto)
+
+- ONE LAST THING about Quarto that aren't Visual Editor Specific but I'd like to show you:
 - Add extension: 
 ```
 filters:
    - lightbox
 lightbox: auto   
 ```
--   Call-outs
--   Citations: 10.1371/journal.pone.0090081
 
-
-
-Copy formatting from wikipedia: https://en.wikipedia.org/wiki/Quarto
