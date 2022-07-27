@@ -44,17 +44,6 @@ Repository for the demos in the "Hello, Quarto!" talk
         echo: false
     ```
 
--   Delete `echo: false` from first chunk -\> turn off echo from document YAML -- type `execute:`, return, `e`, tab completion to choose `echo` and `false`.
-
-    ``` yaml
-    execute:
-        echo: false
-    ```
-
--   From terminal: `quarto publish quarto-pub`
-
-#### Part 2
-
 -   Add alt text to figure in second code chunk -\> save to render
 
     ``` r
@@ -66,13 +55,9 @@ Repository for the demos in the "Hello, Quarto!" talk
     #|   revealing three clusters.
     ```
 
-#### Part 4
-
 -   Change to `format: revealjs` -\> save to render
 
 -   Remove execute / echo to show they're off by default -\> save to render
-
-#### Part 5
 
 -   Change to `format: html`
 
@@ -110,9 +95,12 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Make one change in hello.qmd, watch it update the site
 
--   Add freeze
+-   Add freeze to _quarto.yml
+
     execute:
       freeze: true
+
+-   From terminal: `quarto publish quarto-pub`
 
 ### Demo 2 - Collaborate:
 Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url. Mousepose.
