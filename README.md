@@ -81,22 +81,6 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 -   Remove execute / echo to show they're off by default -\> save to render
 
--   Add code line highlighting to plotting chunk
-
-    ``` r
-      #| code-line-numbers: "|1-2|3|4|5-13|14"
-    ```
-
--   Show hamburger menu outline and print to PDF
-
--   Add chalkboard
-
-    ``` yaml
-    format: 
-      revealjs:
-        chalkboard: true
-    ```
-
 #### Part 5
 
 -   Change to `format: html`
@@ -162,17 +146,39 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 
 ### Demo 3 - Teach / teaching things:
 
--   Auto linking code to docs
+-   Features that are useful for teaching:
+    -   Add chalkboard
+    
+        ``` yaml
+        format: 
+          revealjs:
+            chalkboard: true
+        ```    
+    -   Show hamburger menu outline and print to PDF
+    -   multiplex: Slides / scroll for audience
+    -   Add code line highlighting to plotting chunk
+   
+       ``` r
+         #| code-line-numbers: "|1-2|3|4|5-13|14"
+       ```
+    -   Auto linking code to docs
+    
+        ``` yaml
+        format: 
+          html:
+            code-link: true
+        ```
+    -   From terminal: `quarto publish quarto-pub`
 
-    ``` yaml
-    format: 
-      html:
-        code-link: true
-    ```
-
-- From terminal: `quarto publish quarto-pub`
+-   Features that are useful for learning:
+    -   if teaching with rstudio, it comes with everything, and people can just get started
+    -   visual editor -- Julie will say more
+    -   yaml errors
+    
+-   Features that are useful for research: quarto journal
 
 ### Demo 4 - Reimagine / visual editor:
+
 Prep: pull hello-quarto-demo@collab, open index.qmd and delete visual in yml. Mousepose.
 
 Goal: to show you the visual editor, and also some additional features of Quarto that are integrated in the Visual Editor
