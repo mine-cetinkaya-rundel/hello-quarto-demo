@@ -46,17 +46,16 @@ Repository for the demos in the "Hello, Quarto!" talk
 
     ``` r
     #| fig-alt: |
-    #|   Scatterplot of bill length vs. flipper length
-    #|   for three species of penguins. The 
-    #|   relationship is positive and moderately 
-    #|   strong. The three species are identified on 
-    #|   the plot with points with different colors 
-    #|   and shapes, revealing three clusters.
+    #|   Scatterplot of bill length vs. flipper length for three 
+    #|   species of penguins. The relationship is positive and 
+    #|   moderately strong. The three species are identified on 
+    #|   the plot with points with different colors and shapes, 
+    #|   revealing three clusters.
     ```
 
 -   Change to `format: revealjs` -\> save to render
 
--   Add H2 before plot to make it go on next slide
+-   Remove execute / echo to show they're off by default -\> save to render
 
 -   Change to `format: html`
 
@@ -102,7 +101,6 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   From terminal: `quarto publish quarto-pub`
 
 ### Demo 2 - Collaborate:
-
 Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url. Mousepose.
 
 -   Orient to JupyterLab
@@ -112,7 +110,6 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 -   Talk through and execute notebook chunks
 -   Add `.ipynb` to `_quarto.yml`
 -   View website - new page is added to website
--   Add quarto commenting - no auto-update! Because  Freeze by default with Jupyter Notebooks -- this actually did auto-update hmmmm
 -  Add fig captions
 
 ```
@@ -129,38 +126,21 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 
 ### Demo 3 - Teach / teaching things:
 
--   Convert hello.qmd to `format: revealjs`
-
--   Features that are useful for teaching:   
-    -   Show hamburger menu outline and print to PDF
+-   Features that are useful for teaching:
     -   Add chalkboard
     
         ``` yaml
         format: 
           revealjs:
             chalkboard: true
-        ``` 
-        
+        ```    
+    -   Show hamburger menu outline and print to PDF
     -   multiplex: Slides / scroll for audience
-
-        ``` yaml
-        format: 
-          revealjs:
-            multiplex: true
-        ``` 
-        
     -   Add code line highlighting to plotting chunk
    
        ``` r
-         #| code-line-numbers: "|5-13|14"
+         #| code-line-numbers: "|1-2|3|4|5-13|14"
        ```
- 
-    -   Add tabsets
-
--   Features that are useful for learning:
-    -   if teaching with rstudio, it comes with everything, and people can just get started
-    -   visual editor -- Julie will say more
-    -   back to `format: html` for `hello.qmd`
     -   Auto linking code to docs
     
         ``` yaml
@@ -168,11 +148,14 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
           html:
             code-link: true
         ```
+    -   Add tabsets
+
+-   Features that are useful for learning:
+    -   if teaching with rstudio, it comes with everything, and people can just get started
+    -   visual editor -- Julie will say more
     -   yaml errors
     
--   Open new RStudio with addin. Go to Terminal. `quarto use template quarto-journals/jasa`.
-    Go to folder, update title, Render.
-
+-   Features that are useful for research: quarto journal
 
 ### Demo 4 - Reimagine / visual editor:
 
