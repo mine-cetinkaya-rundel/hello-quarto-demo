@@ -46,16 +46,17 @@ Repository for the demos in the "Hello, Quarto!" talk
 
     ``` r
     #| fig-alt: |
-    #|   Scatterplot of bill length vs. flipper length for three 
-    #|   species of penguins. The relationship is positive and 
-    #|   moderately strong. The three species are identified on 
-    #|   the plot with points with different colors and shapes, 
-    #|   revealing three clusters.
+    #|   Scatterplot of bill length vs. flipper length
+    #|   for three species of penguins. The 
+    #|   relationship is positive and moderately 
+    #|   strong. The three species are identified on 
+    #|   the plot with points with different colors 
+    #|   and shapes, revealing three clusters.
     ```
 
 -   Change to `format: revealjs` -\> save to render
 
--   Remove execute / echo to show they're off by default -\> save to render
+-   Add H2 before plot to make it go on next slide
 
 -   Change to `format: html`
 
