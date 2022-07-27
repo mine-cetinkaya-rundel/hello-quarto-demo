@@ -170,9 +170,8 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
         ```
     -   yaml errors
     
--   Features that are useful for research: quarto journal
-
-    In the terminal: `quarto use template quarto-journals/jasa`
+-   Open new RStudio with addin. Go to Terminal. `quarto use template quarto-journals/jasa`.
+    Go to folder, update title, Render.
 
 
 ### Demo 4 - Reimagine / visual editor:
