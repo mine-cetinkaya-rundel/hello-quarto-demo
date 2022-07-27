@@ -102,6 +102,7 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   From terminal: `quarto publish quarto-pub`
 
 ### Demo 2 - Collaborate:
+
 Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url. Mousepose.
 
 -   Orient to JupyterLab
@@ -128,21 +129,38 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
 
 ### Demo 3 - Teach / teaching things:
 
--   Features that are useful for teaching:
+-   Convert hello.qmd to `format: revealjs`
+
+-   Features that are useful for teaching:   
+    -   Show hamburger menu outline and print to PDF
     -   Add chalkboard
     
         ``` yaml
         format: 
           revealjs:
             chalkboard: true
-        ```    
-    -   Show hamburger menu outline and print to PDF
+        ``` 
+        
     -   multiplex: Slides / scroll for audience
+
+        ``` yaml
+        format: 
+          revealjs:
+            multiplex: true
+        ``` 
+        
     -   Add code line highlighting to plotting chunk
    
        ``` r
-         #| code-line-numbers: "|1-2|3|4|5-13|14"
+         #| code-line-numbers: "|5-13|14"
        ```
+ 
+    -   Add tabsets
+
+-   Features that are useful for learning:
+    -   if teaching with rstudio, it comes with everything, and people can just get started
+    -   visual editor -- Julie will say more
+    -   back to `format: html` for `hello.qmd`
     -   Auto linking code to docs
     
         ``` yaml
@@ -150,14 +168,12 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
           html:
             code-link: true
         ```
-    -   Add tabsets
-
--   Features that are useful for learning:
-    -   if teaching with rstudio, it comes with everything, and people can just get started
-    -   visual editor -- Julie will say more
     -   yaml errors
     
 -   Features that are useful for research: quarto journal
+
+    In the terminal: `quarto use template quarto-journals/jasa`
+
 
 ### Demo 4 - Reimagine / visual editor:
 
