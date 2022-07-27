@@ -21,8 +21,6 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 ### Demo 1 - Share / flexibility in formats:
 
-#### Part 1
-
 -   Open hello.Rmd with source editor -\> knit
 
 -   Change to visual editor -\> knit
