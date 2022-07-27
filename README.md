@@ -51,6 +51,8 @@ Repository for the demos in the "Hello, Quarto!" talk
         echo: false
     ```
 
+-   From terminal: `quarto publish quarto-pub`
+
 #### Part 2
 
 -   Add alt text to figure in second code chunk -\> save to render
@@ -63,22 +65,6 @@ Repository for the demos in the "Hello, Quarto!" talk
     #|   the plot with points with different colors and shapes, 
     #|   revealing three clusters.
     ```
-
-
-#### Part 3 - ??? **Julie note: time-wise I wonder if this could move to Demo 3 Teach"
-
--   Add tables: -
-
-    -   Before "The plot below"
-    -   Insert H2: "Datasets"
-    -   Insert text: "This package has two datasets:"
-    -   Insert tabsets:
-        -   tab 1: penguins_raw
-            -   Includes nesting observations, penguin size data, and isotope measurements from blood samples for adult Adélie, Chinstrap, and Gentoo penguins.
-        -   tab 2: penguins
-            -   Subset of `penguins_raw`, includes measurements for penguin species, island in Palmer Archipelago, size (flipper length, body mass, bill dimensions), and sex.
-
--   Add H2 before plot "A first look at penguins"
 
 #### Part 4
 
@@ -177,7 +163,7 @@ Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into
           html:
             code-link: true
         ```
-    -   From terminal: `quarto publish quarto-pub`
+    -   Add tabsets
 
 -   Features that are useful for learning:
     -   if teaching with rstudio, it comes with everything, and people can just get started
