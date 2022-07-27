@@ -23,8 +23,6 @@ Repository for the demos in the "Hello, Quarto!" talk
 
 #### Part 1
 
-**TO DO: Mention freeze!!!**
-
 -   Open hello.Rmd with source editor -\> knit
 
 -   Change to visual editor -\> knit
@@ -38,6 +36,13 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   Change to `format: pdf` -\> save to render -\> then change back to `format: html`
 
 -   Add chunk option `echo: false` to the first chunk using tab completion -\> save to render
+
+-   Delete `echo: false` from first chunk -\> turn off echo from document YAML -- type `execute:`, return, `e`, tab completion to choose `echo` and `false`.
+
+    ``` yaml
+    execute:
+        echo: false
+    ```
 
 -   Delete `echo: false` from first chunk -\> turn off echo from document YAML -- type `execute:`, return, `e`, tab completion to choose `echo` and `false`.
 
@@ -118,6 +123,10 @@ Repository for the demos in the "Hello, Quarto!" talk
 -   Preview site, show `_site` folder
 
 -   Make one change in hello.qmd, watch it update the site
+
+-   Add freeze
+    execute:
+      freeze: true
 
 ### Demo 2 - Collaborate:
 Starting setup: `hello-quarto-demo@main` cloned, Terminal open already cd'd into the repo. Zoom screenshare show url. Mousepose.
